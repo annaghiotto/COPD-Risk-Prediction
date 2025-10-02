@@ -37,3 +37,14 @@ This repository documents an end-to-end pipeline in R for the estimation of the 
 - **Robustness**: Feature reduction improved interpretability without loss of accuracy; bootstrap confirmed stability of predictors.
 - **Clinical alignment**: Selected variables match known COPD risk factors (smoking, spirometry, respiratory symptoms, asthma history, poor health status).
 
+## Results
+
+### ROC Curves
+ROC curves for the reduced logistic regression models obtained with different feature selection strategies: (a) Backward, (b) Forward, (c) Stepwise Backward, and (d) Stepwise Forward.
+
+![ROC Curves](results/ROC_4_models.png)
+
+### Feature Selection Stability
+Barplot showing the frequency of selection for each variable across 50 bootstrap iterations. The dashed red line indicates the 60% selection threshold.
+
+![Selection frequency](results/var_selection_freq.png)
